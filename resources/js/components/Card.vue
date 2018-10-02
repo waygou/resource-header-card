@@ -8,7 +8,7 @@
                 <p class="py-1">{{card.content_line_1}}</p>
                 <p class="py-1">{{card.content_line_2}}</p>
                 <p class="py-1">{{card.content_line_3}}</p>
-                <a class="text-primary cursor-pointer" :href="link_url">{{card.link_text}}</a>
+                <a class="text-primary cursor-pointer" target="_blank" :href="link_url">{{card.link_text}}</a>
               </div>
             </div>
         </div>
@@ -22,6 +22,10 @@ export default {
     computed: {
         d() {
             return this.card.svg;
+        },
+
+        link_url() {
+            return this.card.link_url;
         }
     }
 }

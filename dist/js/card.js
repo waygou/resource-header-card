@@ -265,6 +265,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     computed: {
         d: function d() {
             return this.card.svg;
+        },
+        link_url: function link_url() {
+            return this.card.link_url;
         }
     }
 });
@@ -318,7 +321,7 @@ var render = function() {
               "a",
               {
                 staticClass: "text-primary cursor-pointer",
-                attrs: { href: _vm.link_url }
+                attrs: { target: "_blank", href: _vm.link_url }
               },
               [_vm._v(_vm._s(_vm.card.link_text))]
             )
