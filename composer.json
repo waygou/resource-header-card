@@ -24,6 +24,12 @@
     "config": {
         "sort-packages": true
     },
+    "authors": [
+        {
+            "name": "Waygou",
+            "email": "bruno.falcao@waygou.com"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
